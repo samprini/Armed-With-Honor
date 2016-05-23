@@ -13,7 +13,7 @@ class AddPosts extends Migration
     public function up()
     {
         Schema::table('Posts', function (Blueprint $table) {
-           $table->incriments('id');
+           $table->increments('id');
            $table->integer('user_id')->unsigned()->index();
            $table->text('title');
            $table->text('Category');
